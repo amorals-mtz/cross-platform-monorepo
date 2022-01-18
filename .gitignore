@@ -1,0 +1,64 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+src/**/*.js
+src/**/*.js.map
+out-tsc/
+bazel-out/
+
+# Node
+node_modules/
+bower_components/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Angular CLI project cache
+.angular/
+
+# Profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+debug.log
+testem.log
+typings/
+.firebase/
+firebase-debug.log
+package-lock.json
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
+Thumbs.db
+
+# End of https://www.gitignore.io/api/angular
