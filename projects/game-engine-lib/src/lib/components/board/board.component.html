@@ -1,0 +1,32 @@
+<div class="grid">
+  <canvas #board class="game-board"></canvas>
+  <div class="right-column">
+    <div>
+      <h1> TETRIS </h1>
+      <p> Score: {{ points }} </p>
+      <p> Lines: {{ lines }} </p>
+      <p> Level: {{ level }} </p>
+      <p> High Score: </p>
+      <p> {{ highScore }} </p>
+      <p> Next Block: </p>
+      <canvas #next class="next"></canvas>
+    </div>
+    <div class="button-container">
+      <button type="button" class="play-button button"
+              *ngIf="!gameStarted"
+              (click)="play()">
+        Play
+      </button>
+      <button type="button" class="reset-button button"
+              *ngIf="gameStarted"
+              (click)="gameOver()">
+        Reset
+      </button>
+      <button type="button" class="pause-button button"
+              [class.button-disabled]="!gameStarted"
+              (click)="pause()">
+        Pause
+      </button>
+    </div>
+  </div>
+</div>
