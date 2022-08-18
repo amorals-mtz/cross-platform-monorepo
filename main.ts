@@ -35,7 +35,7 @@ function createWindow(): BrowserWindow {
   } else {
     win.loadURL(
       url.format({
-        pathname: path.join(__dirname, "dist/index.html"),
+        pathname: path.join(__dirname, "dist/tetris/index.html"),
         protocol: "file:",
         slashes: true,
       })
@@ -57,7 +57,7 @@ try {
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   // Some APIs can only be used after this event occurs.
-  // Added 400ms to fix the black background issue while using a transparent window.
+  // Added 400 ms to fix the black background issue while using a transparent window.
   // More detais at https://github.com/electron/electron/issues/15947
   app.on("ready", () => setTimeout(createWindow, 400));
 
