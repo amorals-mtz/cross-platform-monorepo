@@ -6,8 +6,11 @@
 dist/
 tmp/
 src/**/*.js
-src/**/*.js.map
+*.js.map
+main.js
 out-tsc/
+release/
+# Only exists if Bazel was run
 bazel-out/
 
 # Node
@@ -58,6 +61,7 @@ e2e/*.js
 e2e/*.map
 
 # System Files
+.svn/*
 .DS_Store/
 Thumbs.db
 
